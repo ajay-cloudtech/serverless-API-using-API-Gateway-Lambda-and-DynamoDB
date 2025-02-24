@@ -3,6 +3,8 @@
 High Level Design
 ![Presentation1](https://github.com/user-attachments/assets/d9d3bee0-4cf0-4f34-a25c-0719ce3c7a55)
 
+This serverless API demonstrates how AWS Lambda, API Gateway, and DynamoDB can be used to build scalable and cost-effective microservices. While this is currently a standalone function, the same approach can be extended to design fully decoupled microservices that handle different business logic independently.
+
 An Amazon API Gateway is a collection of resources and methods. For this tutorial, you create one resource (DynamoDBManager) and define one method (POST) on it. The method is backed by a Lambda function (LambdaFunctionOverHttps). That is, when you call the API through an HTTPS endpoint, Amazon API Gateway invokes the Lambda function.
 
 The POST method on the DynamoDBManager resource supports the following DynamoDB operations:
